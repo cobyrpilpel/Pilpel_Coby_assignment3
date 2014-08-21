@@ -19,6 +19,19 @@ var areWheelsAttached = true
 var didGlueSet = true
 var allPartsSecure = true
 var timeHeatGun = 2 
-
-
 var allSuppliesOrganized = confirm("Are all the parts, supplies and tools organized?")
+
+
+//Procedure
+var beginConstruction = function (allSuppliesOrganized)
+{var answer = allSuppliesOrganized;
+if (answer === true )
+{console.log("OK time to get started. Be careful with those tools you could take your eye out!");
+}else {console.log("Ok we haven't even started yet and you have already stabbed yourself with a screwdriver. Let's go over the safety rules again first.");}
+}
+beginConstruction(allSuppliesOrganized)
+
+
+//Boolean
+
+var 
