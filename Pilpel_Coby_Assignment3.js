@@ -19,10 +19,11 @@ var areWheelsAttached = true
 var haveAllParts = true
 var allPartsSecure = true
 var timeHeatGun = 2 
-var allSuppliesOrganized = confirm("Are all the parts, supplies and tools organized?")
 var manualOutOfBox = true
 var buildTime
 
+
+var allSuppliesOrganized = confirm("Are all the parts, supplies and tools organized?")
 //Procedure
 var beginConstruction = function (allSuppliesOrganized)
 	{var answer = allSuppliesOrganized;
