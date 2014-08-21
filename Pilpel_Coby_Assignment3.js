@@ -12,7 +12,7 @@ var partsSetOne = ["servos", "control surfaces", "engine", "propeller blades", "
 var partsSetTwo = ["frame ", "body coverings", "support struts"];
 
 var numberLeftOverScrews = 10
-var chargeUpTime = 25
+var assembleTime = 25
 var glueTime = 5
 var setTime = 2
 var areWheelsAttached = true
@@ -21,6 +21,7 @@ var allPartsSecure = true
 var timeHeatGun = 2 
 var allSuppliesOrganized = confirm("Are all the parts, supplies and tools organized?")
 var manualOutOfBox = true
+var buildTime
 
 //Procedure
 var beginConstruction = function (allSuppliesOrganized)
@@ -79,5 +80,13 @@ glueAllParts()
 
 //Math
 
-
+var	completeBuildTime = function (buildTime)
+{var minutes = glueTime;
+while (buildTime >= 0)
+{console.log("Now we have everything glued together this should only take us " + buildTime + " minutes left of assembling to do. We are almost done!");
+buildtime -= 5;}
+console.log("Well that is that. The frame and cover is all glued on now you only have to snap the " + partsSetOne[0] + " on and we are done with this part of the build!");
+return minutes;};
+completeBuildTime()
+	
 	
